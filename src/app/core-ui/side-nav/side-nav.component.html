@@ -30,6 +30,15 @@
   <button #menuEntry
           class="route-link"
           mat-menu-item
+          routerLink="timeline"
+          routerLinkActive="isActiveRoute">
+    <mat-icon>timeline</mat-icon>
+    <span class="text">{{T.F.TIMELINE.MENU_TITLE|translate}}</span>
+  </button>
+
+  <button #menuEntry
+          class="route-link"
+          mat-menu-item
           routerLink="schedule"
           routerLinkActive="isActiveRoute">
     <mat-icon>access_alarms</mat-icon>
