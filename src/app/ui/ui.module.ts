@@ -75,6 +75,7 @@ import { LongPressDirective } from './longpress/longpress.component';
 import { FormlyMatToggleModule } from '@ngx-formly/material/toggle';
 import { OwlWrapperComponent } from './owl-wrapper/owl-wrapper.component';
 import { DialogPromptComponent } from './dialog-prompt/dialog-prompt.component';
+import { RoundDurationPipe } from './pipes/round-duration.pipe';
 
 const DIALOG_COMPONENTS = [
   DialogConfirmComponent,
@@ -115,6 +116,7 @@ const COMPONENT_AND_PIPES = [
   ThemeSelectComponent,
   ToArrayPipe,
   SortPipe,
+  RoundDurationPipe,
 ];
 
 const MAT_MODULES = [
