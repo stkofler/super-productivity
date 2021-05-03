@@ -26,6 +26,7 @@ export enum TaskReminderOptionId {
   m30 = 'm30',
   h1 = 'h1',
 }
+
 export interface TaskReminderOption {
   id: TaskReminderOptionId;
   title: string;
@@ -97,6 +98,11 @@ export type Task = Readonly<TaskCopy>;
 export interface TaskWithReminderData extends Task {
   readonly reminderData: Reminder;
   readonly parentData?: Task;
+}
+
+export interface TaskWithReminder extends Task {
+  reminderId: string;
+  plannedAt: number;
 }
 
 export interface TaskWithSubTasks extends Task {
